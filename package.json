@@ -1,10 +1,13 @@
 {
-    "name": "bower-webpack",
-    "scripts": {
-        "build": "webpack"
-    },
-    "devDependencies": {
-        "bower": "^1.7.7",
-        "webpack": "^1.12.14"
-    }
+  "name": "bower-webpack",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "bower": "^1.7.7",
+    "webpack": "^1.12.14"
+  }
 }

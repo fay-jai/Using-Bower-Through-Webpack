@@ -11,6 +11,15 @@ var config = {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
     },
+    module: {
+        loaders: [
+            {
+                test: /\.jsx?/,
+                loader: "babel",
+                exclude: /(node_modules|bower_components)/
+            }
+        ]
+    },
     resolve: {
         modulesDirectories: ["node_modules", "bower_components"]
     },
