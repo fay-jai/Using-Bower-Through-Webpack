@@ -1,0 +1,10 @@
+{
+    "name": "bower-webpack",
+    "scripts": {
+        "build": "webpack"
+    },
+    "devDependencies": {
+        "bower": "^1.7.7",
+        "webpack": "^1.12.14"
+    }
+}
