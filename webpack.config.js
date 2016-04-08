@@ -15,12 +15,12 @@ var config = {
         modulesDirectories: ["node_modules", "bower_components"]
     },
     plugins: [
-        new webpack.ResolverPlugin(
+        new webpack.ResolverPlugin([
             // Each bower component package has its own .bower.json file, and
             // the "main" field specifies the location of the distribution
             // file to use.
-            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
-        )
+            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main", ["main", 0]])
+        ], ["normal", "loader"])
     ]
 };
 
